@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ami</title>
+    <style>
+        /* Styling untuk keseluruhan halaman */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fb6ed1, #a777e3);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Styling untuk header */
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Animasi Fade In */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Styling untuk tabel */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Styling untuk kolom header tabel */
+        th, td {
+            text-align: center; /* Rata tengah isi tabel */
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Styling untuk form */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            width: 100%;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1.5s ease;
+        }
+
+        /* Animasi Slide In */
+        @keyframes slideIn {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Tombol submit */
+        input[type="submit"] {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+        }
+
+        /* Efek hover pada tombol submit */
+        input[type="submit"]:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(110, 142, 251, 0.3);
+        }
+
+        /* Elemen terakhir (submit) berada di tengah */
+        tr:last-child td {
+            text-align: center;
+        }
+
+        /* Tambahkan animasi hover untuk keseluruhan form */
+        form:hover {
+            box-shadow: 0 0 25px rgba(251, 110, 195, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Jenis Kelamin</th>
+            <th>Program Studi</th>
+            <th>Link Profile</th>
+        </tr>
+        <tr>
+            <td>Ami</td>
+            <td>2300713</td>
+            <td>Perempuan</td>
+            <td>SIK</td>
+            <td><a href="ami.html">Profile Ami</a></td>
+        </tr>
+        <tr>
+            <td>Wulan</td>
+            <td>2305279</td>
+            <td>Perempuan</td>
+            <td>SIK</td>
+            <td><a href="wulan.html">Profile Wulan</a></td>
+        </tr>
+        <tr>
+            <td>Naira</td>
+            <td>2300850</td>
+            <td>Perempuan</td>
+            <td>SIK</td>
+            <td><a href="naira.html">Profile Naira</a></td>
+        </tr>
+        <tr>
+            <td>Audhi</td>
+            <td>2300975</td>
+            <td>Perempuan</td>
+            <td>SIK</td>
+            <td><a href="audhi.html">Profile Audhi</a></td>
+        </tr>
+    </table>
+</body>
+</html>

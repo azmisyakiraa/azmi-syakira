@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan 6</title>
+    <style>
+        /* Styling untuk keseluruhan halaman */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fb6ed1, #a777e3);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Styling untuk header */
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Animasi Fade In */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Styling untuk form */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            width: 100%;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1.5s ease;
+        }
+
+        /* Animasi Slide In */
+        @keyframes slideIn {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Tata letak table dalam form */
+        table {
+            width: 100%;
+            border-spacing: 15px;
+        }
+
+        td {
+            padding: 10px 0;
+        }
+
+        /* Input fields */
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Fokus pada input untuk efek lebih menarik */
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        select:focus {
+            border-color: #6e8efb;
+            box-shadow: 0 0 8px rgba(251, 110, 204, 0.5);
+            outline: none;
+        }
+
+        /* Styling untuk input radio dan checkbox */
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Tombol submit */
+        input[type="submit"] {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+        }
+
+        /* Efek hover pada tombol submit */
+        input[type="submit"]:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(110, 142, 251, 0.3);
+        }
+
+        /* Elemen terakhir (submit) berada di tengah */
+        tr:last-child td {
+            text-align: center;
+        }
+
+        /* Teks deskripsi kolom form */
+        td:first-child {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Tambahkan animasi hover untuk keseluruhan form */
+        form:hover {
+            box-shadow: 0 0 25px rgba(251, 110, 195, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar Membuat Formulir</h1>
+
+    <form action="">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><textarea name="nama" id=""></textarea></td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>:</td>
+                <td><textarea name="NIM" id=""></textarea></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir</td>
+                <td>:</td>
+                <td><textarea name="TmpLahir" id=""></textarea></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><textarea name="Alamat" id=""></textarea></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td><input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                <td><input type="radio" name="jk" value="Perempuan"> Perempuan    
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>:</td>
+                <td><input type="checkbox" name="hobi" value="membaca"> membaca
+                <td><input type="checkbox" name="hobi" value="memasak"> memasak
+                <td><input type="checkbox" name="hobi" value="menonnton"> menonton
+                <td><input type="checkbox" name="hobi" value="menggambar"> menggambar  
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>:</td>
+                <td><select name="prodi">
+                    <option value="PGSD">Pendidikan Guru Sekolah Dasar</option>
+                    <option value="PGPAUD">Pendidikan Guru Pendidikan Anak Sekolah Dini</option>
+                    <option value="PKP">Pendidikan Kelautan dan Perikanan</option>
+                    <option value="SIK">Sistem Informasi Kelautan</option>
+                    <option value="LK">Logistik Kelautan</option>
+                </select>
+        </table>
+        <input type="submit" value="simpan">
+    </form>
+
+</body>
+</html>
