@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas1</title>
+
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 30px; /* Menambah jarak antara tombol Kirim dan tabel */
+        }
+
+        th, td {
+            text-align: left;
+            border: 1px solid #000; /* Border untuk kotak */
+            padding: 8px;
+        }
+
+        th:nth-child(2), td:nth-child(2) {
+            width: 5%;
+        }
+
+        th:nth-child(3), td:nth-child(3) {
+            width: 75%;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 0;
+        } 
+
+        /* Memberikan jarak antara tombol Kirim dan tabel */
+        form {
+            margin-bottom: 30px; /* Jarak antara tombol Kirim dan tabel */
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>Formulir Pendaftaran Panitia</h1>
+    
+    <!-- Formulir -->
+    <form id="pendaftaranForm">
+        <input type="text" id="nama" placeholder="Masukkan Nama"><br><br>
+        <input type="text" id="NIM" placeholder="Masukkan NIM"><br><br>
+        <input type="text" id="Kelas" placeholder="Masukkan Kelas"><br><br>
+
+        <!-- Pilihan Jenis Kelamin dengan Radio Button -->
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-laki">
+        <label for="lakiLaki">Laki-laki</label><br>
+        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <textarea id="Alamat" placeholder="Masukkan Alamat"></textarea><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>:</th>
+                <th><p id="tulisNAMA"></p></th>
+            </tr>
+            <tr>
+                <th>NIM</th>
+                <th>:</th>
+                <th><p id="tulisNIM"></p></th>
+            </tr>
+            <tr>
+                <th>Kelas</th>
+                <th>:</th>
+                <th><p id="tulisKELAS"></p></th>
+            </tr>
+            <tr>
+                <th>Jenis Kelamin</th>
+                <th>:</th>
+                <th><p id="tulisJENISKELAMIN"></p></th>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <th>:</th>
+                <th><p id="tulisALAMAT"></p></th>
+            </tr>
+        </thead>
+    </table>
+
+    <script src="latihan2.js"></script>
+</body>
+</html>
